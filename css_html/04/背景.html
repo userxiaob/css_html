@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 600px;
+            height: 600px;
+            /* 透明度 
+            rgb(红绿蓝三色)
+            alpha:透明度 0-1之间 1为完全透明 可以写 .1
+            
+            
+            */
+            /* 半透明 */
+            /* background-color: rgba(20,20,20,0.1); */
+            background-image: url(./img/1.jpg);
+            background-repeat: no-repeat;
+            /* background-position: 10px  10px; */
+            /* 左侧是40px  垂直居中 */
+            background-position: 40px center;
+            /* 
+            插入背景图片 用url 
+            平铺效果  repeat 
+            no-repeat
+            repeat-x
+            repeat-y
+
+            背景位置：可以使用方位名词 默认的是左上角对齐
+            如果只有一个词 则另外一个是 center
+            方位名词两个值么有顺序
+
+            保证图在一直在浏览器的中央：bp:top center
+
+            精确位置
+            bp : x坐标 y坐标
+            如果是精确坐标则第一个一定是x 第二个一定是y
+            
+
+            
+             */
+             background-image: url(./img/1.jpg);
+             background-color: rgba(0,0,0,.3);
+
+             background-position: top center;
+
+
+        }
+        body{
+            background-image: url(./img//hpjy.webp);
+            background-position: top center;
+            background-repeat: no-repeat;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+        透明：rgba(0,0,0,0) transparent
+        不加背景颜色时是透明的
+        
+     -->
+     <div class="box"></div>
+    
+    
+</body>
+</html>

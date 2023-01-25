@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            border: solid;
+            border-color: pink;
+        }
+        button{
+            width: 100px;
+            height: 40px;
+            color: #ff6700;
+            background-color: #fff;
+            /* 简写 
+
+            */
+            border: 1px solid red;
+        
+        }
+        input{
+            border-bottom: 10px dashed yellow;
+        
+            width: 520px;
+            /* height: 50px; */
+            font-size: 30px;
+            /* border: 0; */
+            /* 取消轮廓性 */
+            outline: none;
+            border-bottom: 1px solid red;
+            background: url(./) no-repeat left;
+        }
+        /* outline要和input:focus一起使用否则的话 input:focus不起作用 
+        border的宽度是算在盒子的宽度和高度里面的，如果要加上boder则需使盒子的宽度和高度相应减小
+        */
+        input:focus{
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- 
+        content 
+        border
+        padding
+        margin
+
+     -->
+    <div class="box">
+        <button class="service">人工客服</button>
+    </div>
+    <input type="text" placeholder="搜搜">
+</body>
+</html>

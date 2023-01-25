@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .switch{
+            display: block;
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+        }
+        .divtest{
+            display: inline;
+        }
+        input{
+            display: inline-block;
+        }
+     
+    </style>
+</head>
+<body>
+    <!-- 
+        display:显示模式
+        让块级元素中的内容居中对齐：text-align:center
+        让块级元素居中对齐： margin:0 auto
+
+        行级元素：一行可以显示多个，设置宽高不生效 strong a em span
+        display:block 将行级元素转换成块级元素  转换成块级元素之后可以设置宽高
+        display:inline 将块级元素转换成行级元素 div转换成行级元素后可以与别的行级元素公用一行
+     行内块元素：
+     display:inline-block
+     一行可以显示多个
+     可以设置宽和高
+    
+    -->
+     <span class="switch"> 独占一行嘛</span>
+     <span>test</span> <span>test1</span>
+    <div class="divtest">转成行级元素</div>
+    <span>hahha </span>
+    <input type="text">
+    <input type="text">
+    
+</body>
+</html>

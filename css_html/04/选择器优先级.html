@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            color: aliceblue;
+        }
+        div{
+            color: aqua;
+        }
+        .box{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <!-- 
+    继承性
+    子元素会默认继承父元素的特性
+    继承的失效情况
+    链接有默认的蓝色（浏览器给的)
+    不是所有的都继承（宽高不继承）继承文字样式
+
+    层叠性：
+    统一级别如果给同一个标签设置了相同的属性，写在后面的会生效
+    样式冲突的会覆盖
+
+    优先级：
+    ！important>行内样式>id选择器>类选择器>标签选择器> 通配符选择器>继承
+    ！important>行内样式>id选择器>类选择器>标签选择器>通配符选择器>继承
+     
+    继承的权重很低，有自己的样式时使用自己的样式而不是父类的样式
+
+
+
+-->
+     <div>我是文字</div>
+     <div class="box">我是一个盒子</div>
+
+</body>
+
+</html>

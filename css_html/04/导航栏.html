@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav{
+            margin: 0 auto;
+            text-align: center;
+        }
+        .nav a{
+            width: 80px;
+            height: 50px;
+            background-color: #ff0000;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+            text-decoration: none;
+            color:#ffffff;
+        }
+        .nav a:hover{
+            background-color: #ffa500;
+            
+        }
+        .test{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 
+        div未设置宽度时占全部 无法使用magin使其集中 可以通过将 div中的内容居中 text-align:center
+        a 是行级元素无大小 但是需要大小 可以转换成块级元素，但是
+        块级元素独占一行 若导航栏需横着显示则块级元素不可 
+        横着 既有宽度和高度又能在一行显示：inline-block 行内快
+     -->
+     <div class="nav">
+        <a href="">导航1</a>
+        <a href="">导航2</a>
+        <a href="">导航3</a>
+        <a href="">导航4</a>
+        <a href="">导航5</a>
+     </div>
+     <div class="test"></div>
+    
+</body>
+</html>

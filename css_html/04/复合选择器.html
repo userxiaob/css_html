@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        后代选择器比单个的选择器权重要高
+        各个标签的权重
+        标签选择器：0,0,0,1
+        类选择器：0,0,1,0
+        id选择器：0,1,0,0
+        行内样式表：1，0,0,0
+        其重要性和优先级一致
+
+
+
+
+     -->
+     <style>
+        ul{
+            color: red;
+        }
+        li{
+            color: blue;
+        }
+        ul li{
+            color: blueviolet;
+        }
+     </style>
+</head>
+<body>
+    <ul>
+        <li>我是子代</li>
+        <li></li>
+        <li></li>
+    </ul>
+    
+</body>
+</html>

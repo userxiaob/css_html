@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 用于数据的大量展示
+        几行几列
+        属性：
+        border：边框
+        width
+        height
+        标签：表格的标题：caption
+        th th 
+        合并单元格：
+        保留的是左上
+        跨行: rospan
+        跨列：colspan
+     -->
+     <table  border="1px">
+        <caption>
+            <h4>学生成绩单</h4>
+        </caption>
+        <thead>
+            <tr>
+                <th>姓名</th>
+                <th>成绩</th>
+                <th>评语</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">离散</td>
+                <td colspan="2">99</td>
+                <!-- <td>棒</td> -->
+                
+            </tr>
+            <tr>
+                <!-- <td>gas</td> -->
+                <td>109</td>
+                <td>非常棒</td>
+                
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                
+            </tr>
+        </tfoot>
+     </table>
+     <table>
+        <caption>就业榜</caption>
+        <thead>
+            <tr>
+                <th>学号</th>
+                <th>姓名</th>
+                <th>年龄</th>
+                <th>性别</th>
+                <th>薪资</th>
+                <th>就业城市</th>
+                <th>操作</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1001</td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>
+                    <a href="">删除</a>
+                </td>
+            </tr>
+         
+        </tbody>
+     </table>
+    
+</body>
+</html>

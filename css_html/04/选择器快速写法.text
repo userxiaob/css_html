@@ -1,0 +1,8 @@
+类选择器 ： .red
+id 选择器   #red
+交集选择器  p.red#one
+子代选择器 ul>li
+创建多个   ul>li*3
+文本内容 div>{我是div}
+多文本内容 div{我是div}*3
+内容递增   ul>li{第$个li}*5

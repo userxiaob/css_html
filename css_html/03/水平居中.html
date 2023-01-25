@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            line-height: 1.2;
+        }
+        div{
+            width: 400px;
+            height: 200px;
+            background-color:pink;
+            /*让盒子中的东西水平居中 */
+            text-align: center;
+            /* 让盒子水平居中 */
+           margin: 0 auto;
+           line-height: 200px;
+           /* line-height: 28px; */
+        }
+    </style>
+</head>
+<!-- 
+    
+1.text-align:可以让文本，span,a标签 input img 标签居中
+     让盒子里的东西（文字，图片，input a span)水平居中
+     即给需要居中对齐显示元素的父元素设置text-align 
+ 2. 让 div  p h（大盒子）水平居中
+  margin: 0 auto;
+  这个是给本身元素设置margin 即给div h p 设置   
+    使用magin：0 auto时需要给div 一个宽度。
+
+    行高：
+    line-height:
+    让单行文字垂直居中：
+    让行高 = 高度 可以让单行文字垂直居中 仅用于单行文字
+    原理：行高由上边距和下边距组成 ，当行高等于高度时刚好占满
+    行高大于高度文字会偏下
+    行高小于高度文字会偏高
+    
+    
+    -->
+<body>
+    <div>
+        我是一个盒子中的文字我要居中显示
+    </div>
+    
+</body>
+</html>

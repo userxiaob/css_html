@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css.html">
+    <title>Document</title>
+    <style>
+        div{
+            color: pink;
+            font-weight: bolder;
+
+        }
+        p{
+            color: red;
+            font-size: 20px;
+        }
+        em{
+            font-style: normal;
+            text-align: center;
+            text-decoration: underline;
+            text-decoration:line-through;
+        }
+        .box{
+            font-family: '黑体';
+            font-style: italic;
+            font-weight: 700px;
+            font-size: 16px;
+            /* 一个连写可以得到上面四行的效果 */
+            font: italic 700px 16px '黑体';
+            /* 连写时有严格的顺序 font:style weight size family
+            省略时只能省略前两个 否则连写失效
+             */
+        }
+        a{
+            color: black;
+            text-decoration: none;
+        }
+        a:hover{
+            color:orange;
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<!-- 
+    选择器{
+        样式
+    }
+    内嵌式
+</head>上面写 style
+外联式：用 link 
+基本选择器：
+标签选择器
+ p div 这些
+ 标签选择器是选择当中的所有标签
+ 类选择器
+ class
+ .类名
+ 数字 字母 下划线 组成 中划线组成
+
+ id 选择器
+  id=""
+  # id名字
+  通配符选择器
+  *{
+
+  }
+  可以去掉各个选择器上的距离，让其高度都一致
+
+  文字效果
+  加粗：font-weight
+  700 是加粗 400 是不加粗
+  字体倾斜
+  font-style:italic
+
+  如果给一个标签设置了多个属性，下面的会覆盖掉前面的，后面的会生效。
+  
+  文本缩进：text-indent:20px
+   缩进两个字 em：1em是一个汉子的大小
+   text-indent:2em;
+   文本对齐：左右对齐水平对齐
+   text-align:left right center
+
+   文本修饰：加下划线啥的 text-decoration
+   伪类选择器：a:hover :鼠标经过链接a时
+
+   
+
+ -->
+<body>
+    <p>hh</p>
+    <p>dd</p>
+    <p>我是一个段落</p>
+    <em>我想变正</em>
+    <div >我是一个盒子</div>
+    <div  class="box">我要修改文字</div>
+    <a href="#" >小米</a>
+    
+    
+</body>
+</html>
