@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 表单
+    用户可以输入信息进行交互 
+    input
+    属性：
+    type:展示不同的形态（text,password,checkbox, radio
+    单选：radio
+    一组radio只能选其中一个时需要给这组radio用同样的name
+    默认选中状态:checked
+    checkebox:多选状态,可以多选
+    placeholder:提示
+    上传文件： 选择文件上传
+    multiple:多选
+    按钮：submit  reset button 
+    属性：value:设置按钮上的字
+
+    form:表单 action
+    提交form表单中的所有内容
+    reset 按钮在form表单中才起作用，否则无法提交
+   
+    button
+    type:reset submit(提交按钮) button
+
+    select : 下拉菜单
+    textarea:文本域标签 写text的 
+    属性：maxlength:最多可以输入的字数
+
+    label:不属于标签 但是经常和标签搭配使用
+     增加点击范围 radio 点击数字也可以选中
+     label for中的id需和包裹的东西一致
+     label增大选择的区域范围
+
+
+-->
+<form action="">
+    昵称：<input type="text"placeholder="请输入昵称">
+    <input type="password" onclick="showDetail">
+    <input type="radio" name="sex">男 <input type="radio" name="sex"checked>女
+    <input type="checkbox" checked> 吃饭
+    <input type="checkbox" > 睡觉
+    <input type="checkbox" > 学习
+    <input type="checkbox" > 玩游戏
+    上传头像<input type="file" multiple>
+    <input type="button" value="按钮"> 
+    <input type="reset">
+    <input type="submit">
+
+</form>
+所在城市
+<select name="" id="">
+    <option value="">北京</option>
+</select>
+请您留言
+<textarea name="" id="" cols="30" rows="10" maxlength=""></textarea>
+
+<input type="radio" name="sex" id="nv"> <label for="nv">
+    女
+</label>
+<input type="radio" name="sex" id="nan">  <label for="nan">男</label>
+<!-- 方法2 -->
+<label >
+<input type="radio" name="sex1">女
+</label>
+<label >
+    <input type="radio" name="sex1">男
+</label>
+</body>
+</html>
