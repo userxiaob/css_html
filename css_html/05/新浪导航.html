@@ -6,11 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .nav{
+            height: 41px;
+            background-color: #fcfcfc;
+            border-top: 3px solid #f58600;
+            border-bottom: 1px solid #edeef0;
+        }
+        /*新浪导航需要有宽高，但是a为行元素，如果转换成列元素
+        则会变成多行，但是新浪导航需要在一个行中故转换成inlineblock  */
+       .nav a{
+            display: inline-block;
+            /* width: 80px; */
+            /* 规定每个的宽度时会因字数的不同而挤，所以不舍宽度而只设每个a的左右距离即可 */
+            padding: 0 15px;
+            height: 41px;
+            /* background-color: pink; */
+            text-decoration: none;
+            font-size: 14px;
+            color: black;
+            text-align: center;
+            line-height: 41px;
+
+        }
+        .nav a :hover{
+            color: white;
+        }
         
     </style>
 </head>
 <body>
     <div class="nav">
+        <a href="">新浪导航</a>
+        <a href="">新浪导航</a>
+        <a href="">新浪导航</a>
+        <a href="">新浪导航</a>
 
     </div>
     
