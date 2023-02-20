@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 这样设置上下两个盒子的边距不会是150而只是100；这就出现了上下边距合并的
+        合并值以最大值为准 */
+        .box1,
+        .box2{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box1{
+            margin-bottom: 100px;
+        }
+        .box2{
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">上</div>
+    <div class="box2">下</div>
+</body>
+</html>
