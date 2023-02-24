@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+       为什么需要浮动：
+        想把多个块级元素放到同一行上，打破标准流限制（标准流块级元素只能上下排列）
+      float
+        left right
+
+        浮动元素在标准流中不占位置
+        浮动元素比标准流高半个级别，往前浮。往脸前浮。
+        浮动找浮动，下一个浮动元素会在上一个浮动元素后面左右浮动
+        浮动元素受上下元素浮动效果的影响，如果第一个盒子未浮动，第二个盒子浮动，则第二个盒子无法到第一行，因为第一个盒子是标准流
+        独占一行，第二个盒子会影响第三个盒子，如果第三个盒子是标准流，则第三个盒子会在第二行。
+        
+        行内元素也可以浮动，并且浮动后有行内元素的宽高
+        浮动元素不能通过 text-alig:center， 宽度+margin：0 auto 让浮动元素本身水平居中
+
+
+     -->
+     <style>
+        .box1{
+            float: left;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+        .box2{
+            width: 100px;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+
+     </style>
+     
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    
+</body>
+</html>

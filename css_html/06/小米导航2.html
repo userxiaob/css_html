@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 1226px;
+            height: 614px;
+            margin: 50px auto;
+            /* background-color: pink; */
+            background-color: #f5f5f5;
+        }
+        .left{
+            float: left;
+            width: 234px;
+            height: 614px;
+            background-color: purple;
+
+        }
+        .right{
+            float: right;
+            width: 978px;
+            height: 614px;
+            /* background-color: skyblue; */
+        }
+        .right ul{
+            list-style: none;
+        }
+        .right ul li{
+            padding: 20px 0;
+            float: left;
+            width: 234px;
+            height: 300px;
+            /* background-color: skyblue; */
+            margin-right: 14px;
+            margin-bottom: 14px;
+            text-align: center;
+            background-color: #fff;
+        }
+        .right ul li:nth-child(4n){
+            margin-right: 0;
+        }
+        .right ul li img{
+            width: 160px;
+            height: 160px;
+            margin: 0 auto;
+        }
+        .right ul li h3{
+            font-weight: 400;
+            font-size: 14px;
+            margin-top: 20px;
+        }
+        .right ul li p{
+            font-size: 12px;
+            color: #ccc;
+        }
+        .right ul li span{
+            color: orange;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="box">
+        <div class="left">
+            <img src="./img/mi.webp" alt="">
+        </div>
+        <div class="right">
+            <ul>
+                <li><img src="./img/1.webp" alt="">
+                    <h3>xiao mi</h3>
+                    <p class="info">CPU全面平</p>
+                   <span>4999</span>
+
+                
+                </li>
+                <li>2</li>
+                <li>3</li>
+                <li>44</li>
+                <li>5</li>
+                <li>6</li>
+                <li>7</li>
+                <li>8</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

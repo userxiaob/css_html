@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        结构伪类选择器：
+        比如偶数行和奇数行的颜色不一致，隔行或者隔列
+        E:nth-child(n){}：E元素，匹配父元素中的第n个子元素
+        even:偶数
+        odd:奇数
+        n是从0开始依次类推
+        n可以是公式
+        -n+3：选择前面三个
+        n+3:从第三个往后面选
+
+     -->
+    
+     
+     <style>
+        /* ul li:first-child{
+            background-color: rebeccapurple;
+        }
+        ul li:nth-child(even){
+            background-color: red
+            ;
+        }
+        ul li :nth-child(odd){
+            background-color: #fff;
+        } */
+        ul li:first-child a{
+            background-color: red;
+        }
+
+     </style>
+</head>
+<body>
+    <ul>
+        <li>第1个小类</li>
+        <li>第2个小类</li>
+        <li>第3个小类</li>
+        <li>第4个小类</li>
+        <li>第5个小类</li>
+    </ul>
+    <!-- 易错点 -->
+    <ul>
+        <li><a href="">first-child</a></li>
+        <li><a href="">first-child</a></li>
+        <li><a href="">first-child</a></li>
+        <li><a href="">first-child</a></li>
+        <li><a href="">first-child</a></li>
+        <li><a href="">first-child</a></li>
+    </ul>
+    
+</body>
+</html>

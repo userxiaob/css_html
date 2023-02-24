@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            float: left;
+            list-style: none;
+        }
+        li a{
+            /* 这里如果给a加浮动，竖着显示是因为li的问题，所以给li加浮动 */
+            display:block;
+            width: 80px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            background-color: pink;
+            color: aliceblue;
+            text-decoration: none;
+        }
+        a:hover{
+        background-color: green;
+       }
+
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <!--这里如果是一个li中有多个a，想要让a有宽高并且使所有的a在一行中可以设置给a 设置inlineblock
+            但这里是每个li包裹一个a,li是块级元素。所以给a 也转换成块级元素然后使用浮动
+            -->
+            <li>
+                <a href="">新闻1</a>
+            </li>
+            <li>
+                <a href="">新闻1</a>
+            </li>   <li>
+                <a href="">新闻1</a>
+            </li>   <li>
+                <a href="">新闻1</a>
+            </li>   <li>
+                <a href="">新闻1</a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>

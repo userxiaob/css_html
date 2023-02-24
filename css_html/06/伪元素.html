@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 
+        装饰类的如 小三角 左括号 
+        伪元素：由css模拟出的标签效果
+        它是一个盒子，相当于在盒子里面又放了一个盒子
+        ：：before 在父元素内容的最前添加一个伪元素。内容放在盒子内容的最前面，
+        ::after 在父元素内容的最后添加一个伪元素
+        注意：必须设置content属性才能生效
+        伪元素默认是行内元素，设置宽高没有作用
+
+
+
+
+        总结：
+        伪类：给标签类设置不同状态下的不同效果，如鼠标点击前后链接的显示效果
+        结构伪类选择器：不同的行或列显示不同的效果
+        伪元素：是个子元素，可以统一设定样式，由css模拟出的标签效果。
+     -->
+     <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+
+        }
+        .box::before{
+            content: "woshi ";
+        }
+        .box::after{
+            content: "how";
+        }
+        .box1::after{
+            content: "";
+        }
+     </style>
+</head>
+<body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    
+</body>
+</html>

@@ -7,7 +7,15 @@
     <title>Document</title>
     <style>
         /* 这样设置上下两个盒子的边距不会是150而只是100；这就出现了上下边距合并的
-        合并值以最大值为准 */
+        合并值以最大值为准 
+        外边距合并只发生在垂直的盒子之间
+        行内元素内外边距特殊情况
+        行内元素只能给左右的内外边距 不能给上下的内外边距
+        如果非要给则转换成块级元素或者行内块元素
+
+
+        
+        */
         .box1,
         .box2{
             width: 200px;
@@ -20,10 +28,17 @@
         .box2{
             margin-top: 50px;
         }
+        a{
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
     <!-- <div class="box1">上</div>
     <div class="box2">下</div> -->
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
+    <a href=""></a>
 </body>
 </html>
