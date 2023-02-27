@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+button{
+    border: none;
+}
+body{
+    background-color: #f3f5f7;
+}
+/* 版心 中间的宽度
+列经常用到浮动，一浮都浮
+*/
+.w{
+    width: 1200px;
+    margin:0 auto;
+}
+/* header 模块 */
+.header{
+    height: 41px;
+    background-color: pink;
+    margin:30px auto
+}
